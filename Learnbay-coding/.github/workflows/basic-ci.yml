@@ -23,8 +23,8 @@ jobs:
     
     - name: Terraform Init
       run: terraform init
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Validate
       run: terraform validate
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project

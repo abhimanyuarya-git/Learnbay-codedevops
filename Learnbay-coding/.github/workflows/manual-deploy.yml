@@ -46,19 +46,19 @@ jobs:
     
     - name: Terraform Init
       run: terraform init
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Plan
       if: github.event.inputs.action == 'plan'
       run: terraform plan -var-file="${{ github.event.inputs.environment }}.tfvars"
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Apply
       if: github.event.inputs.action == 'apply'
       run: terraform apply -auto-approve -var-file="${{ github.event.inputs.environment }}.tfvars"
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Destroy
       if: github.event.inputs.action == 'destroy'
       run: terraform destroy -auto-approve -var-file="${{ github.event.inputs.environment }}.tfvars"
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project

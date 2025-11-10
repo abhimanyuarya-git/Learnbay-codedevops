@@ -28,11 +28,11 @@ jobs:
     
     - name: Terraform Init
       run: terraform init
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Validate
       run: terraform validate
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
 
   plan:
     name: Plan Changes
@@ -58,11 +58,11 @@ jobs:
     
     - name: Terraform Init
       run: terraform init
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Plan
       run: terraform plan
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
 
   deploy:
     name: Deploy Infrastructure
@@ -89,8 +89,8 @@ jobs:
     
     - name: Terraform Init
       run: terraform init
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
     
     - name: Terraform Apply
       run: terraform apply -auto-approve
-      working-directory: ./Learnbay-coding/Project
+      working-directory: ./Learnbay-codedevops/Learnbay-coding/Project
